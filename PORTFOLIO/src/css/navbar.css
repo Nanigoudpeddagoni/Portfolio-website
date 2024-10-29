@@ -1,0 +1,187 @@
+/* making the navbar flex  */
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #fff;
+  /* background-color: rgba(93, 97, 99, 0.1); */
+ }
+ /* --margin 0 because it is default of 16px  */
+nav ul{
+  margin: 0px;
+  transition: 2s ease-in-out;
+}
+
+ul li{
+  margin-top: 5px;
+  display: inline-block;
+  text-align: center;
+     
+}
+li{
+  padding: 15px;
+  transition: .4s ease-in-out;
+ 
+}
+
+/* making the title and fedback increase the font size */
+span{
+  padding: 15px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 900;
+ 
+}
+.feedback{
+  font-size: 1em;
+  background-color: aqua;
+  color: white;
+  margin: 4px;
+  text-transform: uppercase;
+  display: inline-block;
+  
+}
+a{
+  text-decoration: none;
+  padding: 10px;
+}
+.nav{
+
+  color :rgb(118, 115, 115);
+  padding: 10px;
+  position: relative;
+}
+nav{
+ box-shadow: 0px 1px 5px black;
+ width: 100%;
+}
+.nav:after{
+  content: "";
+  position: absolute;
+  background-color: rgb(68, 202, 226);
+  height: 2px;
+  width: 0%;
+  left:10px;
+  bottom: 0;
+  transition: .5s ;
+ 
+}
+.nav:hover:after{
+  width: 80%;
+  scale: 1;
+}
+
+/* creating the menu bar */
+
+.bar{
+  
+  width: 40px;
+  position: relative;
+  height:23px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+ 
+
+
+}
+.barline{
+  display: none;
+  padding: 0;
+  height: 100%;
+  width:100%;
+  margin: 2px;
+  background-color: white;
+ 
+}
+
+.bar {
+  cursor: pointer;
+}
+
+.barline {
+  transition: transform .6s ease-in-out;
+}
+
+.bar.open .barline:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar.open .barline:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open .barline:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+nav ul.active {
+  display: flex;
+  padding: 0;
+ }
+ 
+/* mobile screen */
+@media only screen and (max-width:600px) {
+   
+  nav{
+      justify-content: space-between;
+      flex-direction: row;
+      transition: 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .feedback{
+    display: none;
+    color: black;
+  }
+  li:hover{
+    background-color: rgb(207, 81, 81);
+  }
+  .nav li{
+    transition: .5s ease-in-out ;
+    text-align: center;
+  }
+  .nav:hover{
+    color: #fff;
+  }
+  span{
+    color: #fff;
+  }
+  .bar{
+    margin-right: 20px ;
+    padding: auto;
+  }
+  .barline{
+    display: block;
+  }
+ .block{
+  display: block;
+   }
+   nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f0e7e7;
+   }
+   nav{
+    background-color: rgb(60, 58, 58);
+   }
+  }
+ 
+ 
+ 
+ 
+
+
+  
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+

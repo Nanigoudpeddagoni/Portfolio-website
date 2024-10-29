@@ -1,0 +1,147 @@
+.home{
+    color:black;
+    text-align: center;
+    border-bottom: 50px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+ /* the first section goes heer */
+.section1{
+    height:300px;
+    width:600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   justify-content: center;
+  
+  
+}
+
+/* the headinh hello */
+ .h1{
+  font-size: 2.5em;
+  text-transform: capitalize;
+  font-weight: 150;
+  margin: 0;
+
+}
+/* nanme hello iam nani */
+.h11{
+  font-size: 4em;
+  margin: 0;
+  text-transform: capitalize;
+  
+}
+/* resume */
+.resume{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: rgba(221, 91, 91,.5);
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.2em;
+ padding: 0 5px;
+  transition: background .8s ease-in-out;
+  
+}
+.resume:hover{
+  background-color: rgba(221, 91, 91,1); 
+}
+.img{
+    
+    height:97%;
+    width:45%;
+    mix-blend-mode: multiply;
+    filter: drop-shadow(0px  0px  10px aqua) ;
+    transition:  .6s ease-in-out;
+    }
+
+.name{
+    font-weight: 100;
+    margin-left: 300px
+}
+.heading{
+    color:rgba(100, 255, 255,.3);
+    text-Shadow:0px 3px 1px black;
+    cursor: pointer;
+    transition: color .8s ease-in-out;
+}
+.heading:hover{
+         
+    color:white;
+}
+
+.img:hover{
+    filter: drop-shadow(0px 10px 30px rgb(0, 0, 0));
+    transform: scale(1.03);
+}
+
+.material{
+  font-size: 1.2em;
+  
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px) {
+  .home{
+   flex-direction: column;
+   overflow-x: hidden;
+   height: 100s vh;
+   
+  }
+  .section1{
+    
+  
+   width: 420px;
+    
+  }
+.h1{
+  font-size: 3em;
+}
+  .heading{
+    padding: 0px;
+    font-size: 1.3em;
+    width: 370px;
+  }
+  .name{
+    margin: 0px;
+    font-size: 16px;
+    color: black;
+  }
+
+  /* photo */
+  .img{
+    width: 380px;
+    margin: 0;
+    height: 50%;
+  }
+}
+
+
+.transform-up {
+  transform: translateY(-20px) scale(1.2);
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
