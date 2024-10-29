@@ -34,7 +34,7 @@ header > p{
     justify-content: space-around;
     text-align: center;
     margin-top: 30px;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     position: relative;
 
 
@@ -60,7 +60,7 @@ header > p{
 .pdetailes{
     width:50%;
    /* box-shadow: inset 0px 0px 10px black; */
-   border-radius: 20px;
+   /* border-radius: 20px; */
    text-align: center;
    display: grid;
    place-items: center;
